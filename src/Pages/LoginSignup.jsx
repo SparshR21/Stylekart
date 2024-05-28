@@ -164,10 +164,12 @@ const LoginSignup = () => {
             Create an account! <span onClick={() => setState("Sign Up")}>Click here</span>
           </p>
         )}
+        {state === "Sign Up" && ( 
         <div className="loginsignup-agree">
           <input type="checkbox" name='checkbox' id='checkbox' autoComplete="off" />
           <p>By continuing, I agree to the terms and policies</p>
         </div>
+        )}
       </div>        
     </div>
   );
